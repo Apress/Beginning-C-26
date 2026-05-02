@@ -22,7 +22,7 @@ int main()
   
   for (auto* shape : shapes) shape->scale(1.5);
   
-  std::println("");
+  std::println();
   printSums(shapes);
 }
 

@@ -11,7 +11,7 @@ void printList(std::string_view message, const LinkedList<std::unique_ptr<int>>&
   {
     std::print("{} ", *iterator.value());
   }
-  std::println("");
+  std::println();
 }
 
 int main()

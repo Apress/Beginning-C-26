@@ -9,7 +9,7 @@ int main()
   int number;
   std::print("\nPlease enter an odd number: ");
   std::cin >> number;
-  std::println("");
+  std::println();
   
 // if (isOdd(number))            /* Error: identifier not found: 'isOdd' */
 //   std::println("Well done!");

@@ -14,7 +14,7 @@ int main()
   for (const auto& p : boxes)
     p.printVolume();
 
-  std::println("");
+  std::println();
   
   // Next, we create a proper polymorphic vector<>:
   std::vector<std::unique_ptr<Box>> polymorphicBoxes;

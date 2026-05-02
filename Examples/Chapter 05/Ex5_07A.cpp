@@ -33,14 +33,14 @@ int main()
         return 1;
       }
     }
-    std::println("");
+    std::println();
 
     // Create the separator row
     for (int i {}; i <= table; ++i)
     {
       std::print("------");
     }
-    std::println("");
+    std::println();
 
     for (int i {1}; i <= table; ++i)
     {    // Iterate over rows
@@ -51,7 +51,7 @@ int main()
       {
         std::print(" {:3} |", i*j); // For each column
       }
-      std::println("");             // End the row
+      std::println();             // End the row
     }
 
     // Check if another table is required

@@ -71,9 +71,9 @@ void Truckload::printBoxes() const
     for (Package* package{ m_head }; package; package = package->m_next)
     {
         std::print(" {}", to_string(*package->m_box));
-        if (!(++count % boxesPerLine)) std::println("");
+        if (!(++count % boxesPerLine)) std::println();
     }
-    if (count % boxesPerLine) std::println("");
+    if (count % boxesPerLine) std::println();
 }
 
 Truckload::Iterator Truckload::getIterator() const { return Iterator{ m_head }; }

@@ -31,7 +31,7 @@ void print_data(const int data[], std::size_t count, const std::string& title,
   {
     std::print("{:{}}", data[i], width); // Display a data item
     if ((i+1) % perLine == 0)            // Newline after perLine values
-      std::println("");
+      std::println();
   }
-  std::println("");
+  std::println();
 }

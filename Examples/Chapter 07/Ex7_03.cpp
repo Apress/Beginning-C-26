@@ -43,8 +43,8 @@ int main()
   for (const auto& name : names)
   {
     std::print("{:>{}}", name, field_width); // Right-align + dynamic width
-    if (!(++count % 5)) std::println("");
+    if (!(++count % 5)) std::println();
   }
 
-  std::println("");
+  std::println();
 }

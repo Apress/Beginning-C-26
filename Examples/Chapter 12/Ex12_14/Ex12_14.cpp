@@ -11,7 +11,7 @@ int main()
   Box box3 {box2};
   std::println("box3 volume = {}", box3.volume());   // Volume = 125
 
-  std::println("");
+  std::println();
 
   Box boxes[6] {box1, box2, box3, Box {2.0}};
 }

@@ -50,7 +50,7 @@ int main()
   {
     std::print("{:<{}}{:>4}  ", words[i], max_length, counts[i]);
     if (!(++count % perline))
-      std::println("");
+      std::println();
   }
-  std::println("");
+  std::println();
 }

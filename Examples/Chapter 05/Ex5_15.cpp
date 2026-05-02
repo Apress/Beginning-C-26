@@ -50,9 +50,9 @@ int main()
     std::print("{:8.1f}", data[i]);
     if (++n == perline)  // When perline have been written...
     {
-      std::println("");  // Start a new line and...
+      std::println();  // Start a new line and...
       n = 0;             // ...reset count on this line
     }
   }
-  std::println("");
+  std::println();
 }

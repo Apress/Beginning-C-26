@@ -39,7 +39,7 @@ int main()
     {
       total += temp;
       std::print("{:6.2f}", temp);
-      if (++count % 5 == 0) std::println("");
+      if (++count % 5 == 0) std::println();
     }
 
     std::println("\nAverage temperature: {:.2f}", total / count);

@@ -18,7 +18,7 @@ int main()
   {
     if (value % 7 == 0 || value % 13 == 0) continue;
     std::print("{:8}", value);
-    if (++count % perline == 0) std::print("\n");
+    if (++count % perline == 0) std::println();
   }
-  std::print("\n");
+  std::println();
 }

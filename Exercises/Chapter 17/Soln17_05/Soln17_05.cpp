@@ -40,10 +40,10 @@ int main()
     {
       std::print("{} ", iterator.value());
       if (++count % perline == 0)
-        std::println("");
+        std::println();
     }
     if (count % perline)
-      std::println("");
+      std::println();
   }
-  std::println("");
+  std::println();
 }

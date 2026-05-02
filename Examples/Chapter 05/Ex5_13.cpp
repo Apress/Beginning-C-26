@@ -16,7 +16,7 @@ int main()
     if (them < those)   std::println("them are less than those.");
   }
   
-  std::println("");
+  std::println();
   
   {
 	std::println("Next we repeat exactly the same comparisons with plain C++ arrays:");

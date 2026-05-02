@@ -32,10 +32,10 @@ int main()
   {
     std::print("{} ", iterator.value());
     if (!(++count % perline))
-      std::println("");
+      std::println();
     iterator.next();
   }
-  std::println("");
+  std::println();
 
   // List the words in reverse order 5 to a line
   std::println("\nIn reverse order, the words are:\n");
@@ -45,8 +45,8 @@ int main()
   {
     std::print("{} ", iterator.value());
     if(!(++count % perline))
-      std::println("");
+      std::println();
     iterator.previous();
   }
-  std::println("");
+  std::println();
 }

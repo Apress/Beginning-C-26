@@ -21,7 +21,7 @@ int main()
       std::size_t lines {};
       for (int i {end}; i >= start; --i)
       {
-        if (lines++ % 5 == 0) std::println("");
+        if (lines++ % 5 == 0) std::println();
         std::print("{:5g}", values[i] + values[i-1]);
       }
     }

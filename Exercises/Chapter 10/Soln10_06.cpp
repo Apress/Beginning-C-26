@@ -80,11 +80,11 @@ void print(const std::vector<T>& data, unsigned width)
     if (++elements_in_line == elements_per_line)
     {
         elements_in_line = 0;
-        std::println("");
+        std::println();
     }
   }
   if (elements_in_line)
   {
-    std::println("");
+    std::println();
   }
 }

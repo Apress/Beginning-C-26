@@ -16,7 +16,7 @@ int main()
   std::print("Enter the average fish length in inches: ");
   std::cin >> fish_length;
   fish_length /= inches_per_foot;  // Convert to feet
-  std::println("");
+  std::println();
 
   // Calculate the required surface area
   const double pond_area {fish_count * fish_length * fish_factor};

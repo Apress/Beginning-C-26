@@ -11,7 +11,7 @@ int main()
   box.printVolume();          // Volume of Box
   hardcase.printVolume();     // Volume of ToughPack
   carton.printVolume();       // Volume of Carton
-  std::println("");
+  std::println();
 
 // Uncomment the following statement for an error
 // std::println("hardcase volume is {}\n", hardcase.volume());

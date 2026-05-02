@@ -31,10 +31,10 @@ int main()
   {
     std::print("{:8}", prime);
     if (++count % 15 == 0)
-      std::println("");
+      std::println();
   }
   
-  std::println("");
+  std::println();
 }
 
 /* 

@@ -8,7 +8,7 @@ int main()
   for (int i{ -3 }; i <= 3; ++i)      // Calculate powers of 8 from -3 to +3
     std::print("{:10g}", power(8.0, i));
 
-  std::println("");
+  std::println();
 }
 
 // Recursive function to calculate x to the power n

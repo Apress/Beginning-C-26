@@ -44,9 +44,9 @@ int main()
     {
       std::print("{:<{}}", word, max_length + 2);
       if (++count % perline) continue;
-      std::println("");
+      std::println();
     }
-    std::println("");
+    std::println();
     words.clear();
     count = 0;
   }

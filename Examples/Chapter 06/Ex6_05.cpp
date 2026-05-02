@@ -32,7 +32,7 @@ int main()
   {
     std::print("{:7}", *(primes + i));
     if ((i+1) % 10 == 0)           // Newline after every 10th prime
-      std::println("");
+      std::println();
   }
-  std::println("");
+  std::println();
 }

@@ -53,13 +53,13 @@ int main()
     {
       std::print("{} ", iter->second);
       if (++count % perline == 0)
-        std::println("");
+        std::println();
     }
     if (count % perline)
-      std::println("");
+      std::println();
   }
 
-  std::println("");
+  std::println();
 
   /* Option 2: take advantage of the fact that the keys are already sorted in the multimap */
   std::size_t count{};          // Word counter
@@ -69,17 +69,17 @@ int main()
     if (letter != previous_letter)
     {
       if (count % perline)  // Add line break after each new letter if need be
-        std::println("");
+        std::println();
       count = 0;            // Always reset counter
     }
 
     std::print("{} ", word);
     if (++count % perline == 0)
-      std::println("");
+      std::println();
 
     previous_letter = letter;
   }
   
   if (count % perline)
-    std::println("");
+    std::println();
 }

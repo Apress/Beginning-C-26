@@ -54,7 +54,7 @@ int main()
   {
     std::print("{:<{}} {:>4}\t", names[i], max_length, grades[i]);
     if ((i + 1) % perline) continue;
-    std::println("");
+    std::println();
   }
-  std::println("");
+  std::println();
 }

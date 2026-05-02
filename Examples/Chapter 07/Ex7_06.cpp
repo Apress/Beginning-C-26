@@ -25,8 +25,8 @@ int main()
   for (const auto& word : words)
   {
     std::print("{:15}", word);
-    if (!(++count % 5)) std::println("");
+    if (!(++count % 5)) std::println();
   }
-  std::println("");
+  std::println();
 
 }

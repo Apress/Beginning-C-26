@@ -13,7 +13,7 @@ int main()
     std::print("{} ", stack.top());
     stack.pop();    // pop() is a void function!
   }
-  std::println("");
+  std::println();
 
   std::queue<int> queue;
   for (int i {}; i < 10; ++i)
@@ -25,5 +25,5 @@ int main()
     std::print("{} ", queue.front());
     queue.pop();    // pop() is a void function!
   }
-  std::println("");
+  std::println();
 }

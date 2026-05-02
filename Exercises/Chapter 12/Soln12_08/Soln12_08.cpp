@@ -21,11 +21,11 @@ int main()
 
   std::println("The random truckload:");
   load.printBoxes();
-  std::println("");
+  std::println();
   
   std::println("The same random truckload in reverse:");
   load.printBoxesReversed();
-  std::println("");
+  std::println();
 
   std::println("The largest box (found using forward iteration) is {}", to_string(*findLargestBox(load)));
   std::println("The smallest box (found using reverse iteration) is {}", to_string(*findSmallestBox(load)));

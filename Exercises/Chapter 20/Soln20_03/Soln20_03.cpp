@@ -53,13 +53,13 @@ int main()
     {
       std::print("{} ", word);
       if (++count % perline == 0)
-        std::println("");
+        std::println();
     }
     if (count % perline)
-      std::println("");
+      std::println();
   }
 
-  std::println("");
+  std::println();
 
   /* Option 2: take advantage of the fact that the keys are already sorted in the map */
   for (const auto& [letter, list] : lists)
@@ -69,9 +69,9 @@ int main()
     {
       std::print("{} ", word);
       if (++count % perline == 0)
-          std::println("");
+          std::println();
     }
     if (count % perline)
-      std::println("");
+      std::println();
   }
 }

@@ -33,9 +33,9 @@ void Truckload::printBoxes() const
   for (Package* package{m_head}; package; package = package->getNext())
   {
     std::print(" {}", to_string(*package->getBox()));
-    if (! (++count % boxesPerLine)) std::println("");
+    if (! (++count % boxesPerLine)) std::println();
   }
-  if (count && count % boxesPerLine) std::println("");
+  if (count && count % boxesPerLine) std::println();
 }
 
 SharedBox Truckload::getFirstBox()

@@ -52,9 +52,9 @@ void Truckload::printBoxes() const
   for (Package* package{m_head}; package; package = package->m_next)
   {
     std::print(" {}", to_string(*package->m_box));
-    if (! (++count % boxesPerLine)) std::println("");
+    if (! (++count % boxesPerLine)) std::println();
   }
-  if (count % boxesPerLine) std::println("");
+  if (count % boxesPerLine) std::println();
 }
 
 void Truckload::printBoxesReversed() const
@@ -64,9 +64,9 @@ void Truckload::printBoxesReversed() const
   for (Package* package{ m_tail }; package; package = package->m_previous)
   {
     std::print(" {}", to_string(*package->m_box));
-    if (!(++count % boxesPerLine)) std::println("");
+    if (!(++count % boxesPerLine)) std::println();
   }
-  if (count % boxesPerLine) std::println("");
+  if (count % boxesPerLine) std::println();
 }
 
 Truckload::Iterator Truckload::getIterator() const

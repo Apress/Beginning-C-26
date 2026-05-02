@@ -9,7 +9,7 @@ int main()
 
   std::print("Please input two integers, separated by a space: ");
   std::cin >> value1 >> value2;
-  std::println("");
+  std::println();
 
   if (value1 == value2)
     std::println("The values you entered are the same (two times {}).", value1);

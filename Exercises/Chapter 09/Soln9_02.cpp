@@ -50,9 +50,9 @@ void show_data(
   {
     std::print("{:{}}", data[i], width);  // Print a data item
     if ((i + 1) % perLine == 0)           // Newline after perLine values
-      std::println("");
+      std::println();
   }
-  std::println("");
+  std::println();
 }
 
 void show_data(int data, std::string_view title, std::size_t width)

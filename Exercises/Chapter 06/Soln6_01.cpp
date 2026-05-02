@@ -19,7 +19,7 @@ int main()
   {
     std::print("{:5}", *(odds + i));
     if ((i + 1) % perline == 0)            // Uses the loop counter to decide when a newline is required
-      std::println("");
+      std::println();
   }
 
   std::println("\nIn reverse order these numbers are:");
@@ -27,6 +27,6 @@ int main()
   {                                        // because std::size_t cannot be negative
     std::print("{:5}", *(odds + i));
     if (i % perline == 0)
-      std::println("");
+      std::println();
   }
 }

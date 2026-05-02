@@ -11,7 +11,7 @@ int main()
   std::ranges::sort(names);
   std::println("Names sorted lexicographically:\n{:n}", names);
   
-  std::println("");
+  std::println();
 
   // Sort the names by length
   /* Projection using member function pointer */

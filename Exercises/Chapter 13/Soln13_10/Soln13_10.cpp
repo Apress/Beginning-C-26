@@ -26,7 +26,7 @@ int main()
   std::println("The boxes in the Truckload are:");
   load.printBoxes();
 
-  std::println("");
+  std::println();
 
   Truckload copied;
   copied = load;		// Use copy assignment

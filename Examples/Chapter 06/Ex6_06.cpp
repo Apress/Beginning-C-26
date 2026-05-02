@@ -38,9 +38,9 @@ int main()
   {
     std::print("{:10}", primes[i]);
     if ((i + 1) % 10 == 0)    // After every 10th prime...
-      std::println("");       // ...start a new line
+      std::println();       // ...start a new line
   }
-  std::println("");
+  std::println();
 
   delete[] primes;            // Free up memory...
   primes = nullptr;           // ... and reset the pointer

@@ -12,7 +12,7 @@ int main()
   for (const auto& p : polymorphicBoxes)
     p->printVolume();
 
-  std::println("");
+  std::println();
 
   Carton carton{ 40.0, 30.0, 20.0 };
   Box* box{ &carton };

@@ -33,9 +33,9 @@ void Truckload::printBoxes() const
   for (const auto& box : m_boxes)   // Can use range-based loop now...
   {
     std::print(" {}", to_string(*box));
-    if (!(++count % boxesPerLine)) std::println("");
+    if (!(++count % boxesPerLine)) std::println();
   }
-  if (count % boxesPerLine) std::println("");
+  if (count % boxesPerLine) std::println();
 }
 
 Truckload::Iterator Truckload::getIterator() const { return Iterator{ m_boxes }; }

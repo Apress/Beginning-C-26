@@ -24,8 +24,8 @@ int main()
   {
     std::print("{} ", prime);
     if (++count % per_line == 0)
-      std::println("");
+      std::println();
   }
   if (count % per_line)
-    std::println("");
+    std::println();
 }

@@ -36,9 +36,9 @@ void print_data(const double data[], std::size_t count,
     // Use dynamic field width and precision (see Chapter 7)
     std::print("{:{}.{}g}", data[i], width, width / 2); 
     if ((i + 1) % perLine == 0)   // Newline after perLine values
-      std::println("");
+      std::println();
   }
-  std::println("");
+  std::println();
 }
 
 const double* smallest(const double data[], std::size_t count)

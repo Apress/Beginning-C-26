@@ -19,7 +19,7 @@ int main()
   array_of_arrays.push_back(array);              // Push an lvalue
 
   array.push_back("One more for good measure");
-  std::println("");
+  std::println();
 
   array_of_arrays.push_back(std::move(array));   // Push an rvalue
 }

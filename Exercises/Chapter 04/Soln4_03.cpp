@@ -8,7 +8,7 @@ int main()
 
   std::print("Please enter a number between 1 and 100: ");
   std::cin >> value;
-  std::println("");
+  std::println();
 
   std::print("The number you entered, {}, is ", value);
 

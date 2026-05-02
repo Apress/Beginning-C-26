@@ -199,7 +199,7 @@ void printNumber(const std::string& label, double number)
   else
     std::print("{:.4}", number);
 
-  std::println("");
+  std::println();
 }
 
 void printNumbers(const std::string& label, const unsigned(&numbers)[5])
@@ -212,5 +212,5 @@ void printNumbers(const std::string& label, const unsigned(&numbers)[5])
       std::print("{} ", number);
   }
 
-  std::println("");
+  std::println();
 }

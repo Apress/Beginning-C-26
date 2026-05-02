@@ -43,7 +43,7 @@ void list_words(const vector<string>& words)
   {
     std::print("{:>15}", word);
     if (!(++count % 5))
-      std::println("");
+      std::println();
   }
-  std::println("");
+  std::println();
 }

@@ -19,7 +19,7 @@ int main()
   {
     std::print("{:5}", *traversal_pointer++);
     if ((i + 1) % perline == 0)   // Uses the loop counter to decide when a newline is required
-      std::println("");
+      std::println();
   }
 
   std::println("\nIn reverse order these numbers are:");
@@ -27,6 +27,6 @@ int main()
   {
     std::print("{:5}", *(--traversal_pointer)); // Use the pre-decrement operator to make sure the pointer is decremented
     if ((i + 1) % perline == 0)                 // before it is dereferenced (at the start of this loop, 
-      std::println("");                         // the pointer points one passed the last element of the odds array)
+      std::println();                         // the pointer points one passed the last element of the odds array)
   }
 }

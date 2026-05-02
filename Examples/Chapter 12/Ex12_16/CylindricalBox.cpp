@@ -12,7 +12,7 @@ CylindricalBox::CylindricalBox(float radius, float height, std::string_view mate
   {
     std::print(" (the default material!)");
   }
-  std::println("");
+  std::println();
 }
 
 float CylindricalBox::volume() const

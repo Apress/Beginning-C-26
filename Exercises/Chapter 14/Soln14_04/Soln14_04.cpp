@@ -17,7 +17,7 @@ int main()
   for (const auto& employee : employees)
     employee.who();
 
-  std::println("");
+  std::println();
 
   // Note: explicitly specifying the type in front of every {...} 
   // in a vector's initializer list, like we did for Employees, 

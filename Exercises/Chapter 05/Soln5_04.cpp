@@ -45,5 +45,5 @@ int main()
   {
     std::print("{}", string[count - i]);
   }
-  std::println("");
+  std::println();
 }

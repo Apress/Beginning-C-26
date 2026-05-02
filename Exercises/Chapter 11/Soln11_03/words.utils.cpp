@@ -36,9 +36,9 @@ void words::utils::print_words(const Words& words)
     if ((*words[i])[0] != (*words[i - 1])[0] || ++words_in_line == words_per_line)
     {
       words_in_line = 0;
-      std::println("");
+      std::println();
     }
     std::print("{:{}}", *words[i], field_width); // Output a word
   }
-  std::println("");
+  std::println();
 }

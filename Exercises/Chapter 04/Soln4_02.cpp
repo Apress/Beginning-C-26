@@ -12,7 +12,7 @@ int main()
 
   std::print("Please input two positive integers, separated by a space: ");
   std::cin >> value1 >> value2;
-  std::println("");
+  std::println();
 
   if (value1 <= 0 || value2 <= 0)  // Valid input?
   {

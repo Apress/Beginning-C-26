@@ -14,5 +14,5 @@ int main()
 
   for (int element : my_deque) // A deque<>, like all containers, is a range
     std::print("{} ", element);
-  std::println("");
+  std::println();
 }

@@ -15,7 +15,7 @@ int main()
   // Display the words in reverse order
   while (!newStack.isEmpty())
     std::print("{} ", newStack.pop());
-  std::println("");
+  std::println();
 
   // Reverse wordStack onto newStack
   while (!wordStack.isEmpty())
@@ -24,7 +24,7 @@ int main()
   // Display the words in original order
   while (!newStack.isEmpty())
     std::print("{} ", newStack.pop());
-  std::println("");
+  std::println();
 
   std::println("\nEnter a line of text:");
   std::string text;
@@ -38,5 +38,5 @@ int main()
   while (!characters.isEmpty())
     std::print("{}", characters.pop()); // Pop the characters off the stack
 
-  std::println("");
+  std::println();
 }

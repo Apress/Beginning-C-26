@@ -11,9 +11,9 @@ int main()
     std::print("radius = {:4.2f}, area = {:5.2f}; ", radius, area);
     if (++values_current_line == values_per_line)  // When enough values written...
     {
-      std::println("");          // ...start a new line...
+      std::println();          // ...start a new line...
       values_current_line = 0;   // ...and reset the line counter
     }
   }
-  std::println("");
+  std::println();
 }

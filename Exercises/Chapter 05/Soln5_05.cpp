@@ -27,5 +27,5 @@ int main()
   {
     std::print("{}", string[i]);
   }
-  std::println("");
+  std::println();
 }

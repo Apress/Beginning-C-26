@@ -20,5 +20,5 @@ int main()
   {
     std::print("{} ", *iter);
   }
-  std::println("");
+  std::println();
 }

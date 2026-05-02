@@ -24,5 +24,5 @@ int main()
   for (int i{ -3 }; i <= 3; ++i)
     std::print("{:10g}", power(8.0, i));
 
-  std::println("");
+  std::println();
 }

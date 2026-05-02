@@ -80,11 +80,11 @@ void showWordCounts(const WordCounts& wordCounts)
           || words_in_line++ == words_per_line)
     {
       words_in_line = 0;
-      std::println("");
+      std::println();
     }
     // Output "word (count)", where word has a dynamic field width
     std::print("{:>{}} ({:2})", word, field_width, count); 
     previous_initial = word[0];
   }
-  std::println("");
+  std::println();
 }

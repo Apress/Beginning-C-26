@@ -35,12 +35,12 @@ int main()
   std::print("{:>8}", '|');
   for (auto w : weight_lbs)
     std::print("{:^6}|", w);
-  std::println("");
+  std::println();
   
   // Output line below headings
   for (unsigned i{1}; i < wt_count; ++i)
     std::print("--------");
-  std::println("");
+  std::println();
 
   const unsigned inches_per_foot {12u};
   for (auto h : height_ins)
@@ -56,7 +56,7 @@ int main()
       const double bmi = w_kg / (h_m * h_m);
       std::print(" {:2.1f} |", bmi);
     }
-    std::println("");
+    std::println();
   }
   // Output line below table
   for (std::size_t i {1}; i < wt_count; ++i)

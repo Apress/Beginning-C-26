@@ -45,9 +45,9 @@ void show_data(std::span<const double> data,
     // Print a data item (uses a dynamic field width: see Chapter 7)
     std::print("{:{}.6g}", data[i], width); 
     if ((i + 1) % perLine == 0)     // Newline after perLine values
-      std::println("");
+      std::println();
   }
-  std::println("");
+  std::println();
 }
 
 std::optional<double> smallest(std::span<const double> data)

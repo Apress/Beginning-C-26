@@ -26,7 +26,7 @@ int main()
     newStack.pop();
   }
     
-  std::println("");
+  std::println();
 
   // Reverse wordStack onto newStack
   while (!wordStack.empty())
@@ -42,7 +42,7 @@ int main()
     newStack.pop();
   }
     
-  std::println("");
+  std::println();
 
   std::println("\nEnter a line of text:");
   std::string text;
@@ -54,12 +54,12 @@ int main()
   for (std::size_t i{}; i < text.length(); ++i)
     characters.push(text[i]);      // Push the string characters onto the stack
     
-  std::println("");
+  std::println();
   while (!characters.empty())
   {
     std::print("{}", characters.top()); // Pop the characters off the stack
     characters.pop();
   }
 
-  std::println("");
+  std::println();
 }

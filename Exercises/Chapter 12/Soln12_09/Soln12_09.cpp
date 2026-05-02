@@ -41,22 +41,22 @@ int main()
 
   std::println("The random truckload:");
   load.printBoxes();
-  std::println("");
+  std::println();
 
   auto largestIter{ findLargestBox(load) };
   auto smallestIter{ findSmallestBox(load) };
 
   std::println("The largest box (found using forward iteration) is {}", to_string(*largestIter.getCurrentBox()));
-  std::println("");
+  std::println();
 
   load.removeBox(largestIter);
 
   std::println("The truckload without its largest box:");
   load.printBoxes();
-  std::println("");
+  std::println();
 
   std::println("The smallest box (found using reverse iteration) is {}", to_string(*smallestIter.getCurrentBox()));
-  std::println("");
+  std::println();
 
   load.removeBox(smallestIter);
 

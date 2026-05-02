@@ -26,7 +26,7 @@ int main()
   std::println("box1 is {}", to_string(box1));
   testBox(box1);
   
-  std::println("");
+  std::println();
 
   Box box2{ 0, 0, 0 };
   std::println("box2 is {}", to_string(box2));

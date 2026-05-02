@@ -12,13 +12,13 @@ int main()
     if (theBox > box)     // > works
       std::println("{} is greater than {}", to_string(theBox), to_string(box));
 
-  std::println("");
+  std::println();
 
   for (const auto& box : boxes)
     if (theBox != box)    // != works
       std::println("{} is not equal to {}", to_string(theBox), to_string(box));
 
-  std::println("");
+  std::println();
 
   for (const auto& box : boxes)
     if (6.0 <= box)      // Yes, even double <= Box works!!
