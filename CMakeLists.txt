@@ -10,29 +10,13 @@ set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED YES)
 SET(CMAKE_SUPPRESS_REGENERATION YES) # We prefer CMake GUI to generate CMake files...
 
-# Function to inject workarounds through forced #includes...
-function(inject_workarounds target)
-	target_include_directories(${target} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/Workarounds/)
-	if(MSVC)
-		target_compile_options(${target} PRIVATE /W4 /w34062 /FIworkarounds.h)
-	else() # GCC or Clang (untested)
-		target_compile_options(${target} PRIVATE -include workarounds.h)
-	endif()
-endfunction()
-
-# Add source code of the workarounds to the solution
-file( GLOB workarounds "Workarounds/*.h" )
-add_library(Workarounds STATIC ${workarounds})
-set_target_properties(Workarounds PROPERTIES LINKER_LANGUAGE CXX)
-
 # Enable Scan Sources for Module Dependencies property of Visual Studio
 if(MSVC)
-	configure_file("Workarounds/Directory.Build.props" "Directory.Build.props" COPYONLY)
+	configure_file("MSVC/Directory.Build.props" "Directory.Build.props" COPYONLY)
 endif()
 
 function(add_project name dir files chapter)
 	add_executable( ${name} ${files} )
-	inject_workarounds(${name})
 	
 	source_group(TREE ${dir} FILES ${files})
 	if (dir MATCHES ".*Examples.*")
