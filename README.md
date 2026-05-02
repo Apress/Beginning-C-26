@@ -1,6 +1,7 @@
 # Apress Source Code
 
-This repository accompanies [*Beginning C++23*](https://link.springer.com/book/10.1007/978-1-4842-9343-0) by Ivor Horton and Peter Van Weert (Apress, 2023).
+This repository will accompany *Beginning C++26* by Ivor Horton and Peter Van Weert,
+the upcoming successor of [*Beginning C++23*](https://link.springer.com/book/10.1007/978-1-4842-9343-0) (Apress).
 
 <img src="BeginningCpp23.jpg" width=250 alt="Cover image"/>
 
